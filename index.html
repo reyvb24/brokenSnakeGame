@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SNAKE</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="game.js"></script>
+</head>
+<body>
+	
+	<p>SNAKE</p>
+	<p id ="description">Get the snake to eat the apple!</p>
+
+	<div id="difficulty-bar">
+		<button class= "difficulty toggle" id = "easy">Easy</button>
+		<button class = "difficulty" id = "medium">Medium</button>
+		<button class = "difficulty" id = "hard">Hard</button>
+	</div>
+	<div id="container">
+		<strong id="highscore">High Score: 0</strong>
+		<strong id="score">Score: 0</strong>
+	</div>
+	<img id="image" width=50 height=50 src="snake-head.png">
+	<canvas id="canvas" width="700" height="500" style="background-color: black;"></canvas>
+	
+
+</body>
+	
+</html>

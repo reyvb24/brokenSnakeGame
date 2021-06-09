@@ -1,0 +1,60 @@
+* {
+	margin: 0;
+	padding: 0;
+
+}
+
+body {
+	font-size: 50px;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#container {
+	display: flex;
+	justify-content: center;
+}
+
+#difficulty-bar {
+	display: flex;
+	width: 50%;
+	justify-content: space-around;
+	margin: auto;
+	padding: 20px;
+}
+
+.difficulty {
+	position:relative;
+	width: 30%;
+	margin: auto;
+	height: 25px;
+	background-color: rgb(218, 218, 218);
+}
+
+.toggle {
+	background-color: aquamarine;
+}
+
+strong {
+	padding: 0 20px;
+}
+
+#image {
+	position: relative;
+	width: 50px;
+	height: 50px;
+	display: none;
+}
+
+#mouse, #description, strong {
+	font-size: 20px;
+}
+
+#description {
+	padding-bottom: 20px;
+}
+
+canvas {
+	background-color: black;
+}
+
