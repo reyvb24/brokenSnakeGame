@@ -220,30 +220,32 @@ document.addEventListener("DOMContentLoaded", () => {
 	// function to set the speed of the snake game
 	function setSpeed(spd) {
 		if (!started) {
-			console.log(speed);
 			if (spd === "easy") {
 				document.getElementById("easy").classList.add("toggle");
 				document.getElementById("medium").classList.remove("toggle");
 				document.getElementById("hard").classList.remove("toggle");
 				speed = 250;
-				setInterval(draw, speed);
+				clearInterval(start);
+				start = setInterval(draw, speed);
 			} else if (spd === "medium") {
 				document.getElementById("easy").classList.remove("toggle");
 				document.getElementById("medium").classList.add("toggle");
 				document.getElementById("hard").classList.remove("toggle");
 				speed = 200;
-				setInterval(draw, speed);
+				clearInterval(start);
+				start = setInterval(draw, speed);
 			} else if (spd === "hard") {
 				document.getElementById("easy").classList.remove("toggle");
 				document.getElementById("medium").classList.remove("toggle");
 				document.getElementById("hard").classList.add("toggle");
 				speed = 150;
-				setInterval(draw, speed);
+				clearInterval(start);
+				start = setInterval(draw, speed);
 			}
 		}
 	}
 
 	// start the game
-	setInterval(draw, speed);
+	var start = setInterval(draw, speed);
 	
 });
