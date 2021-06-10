@@ -225,27 +225,24 @@ document.addEventListener("DOMContentLoaded", () => {
 				document.getElementById("medium").classList.remove("toggle");
 				document.getElementById("hard").classList.remove("toggle");
 				speed = 250;
-				clearInterval(start);
-				start = setInterval(draw, speed);
+				setInterval(draw, speed);
 			} else if (spd === "medium") {
 				document.getElementById("easy").classList.remove("toggle");
 				document.getElementById("medium").classList.add("toggle");
 				document.getElementById("hard").classList.remove("toggle");
 				speed = 200;
-				clearInterval(start);
-				start = setInterval(draw, speed);
+				setInterval(draw, speed);
 			} else if (spd === "hard") {
 				document.getElementById("easy").classList.remove("toggle");
 				document.getElementById("medium").classList.remove("toggle");
 				document.getElementById("hard").classList.add("toggle");
 				speed = 150;
-				clearInterval(start);
-				start = setInterval(draw, speed);
+				setInterval(draw, speed);
 			}
 		}
 	}
 
 	// start the game
-	var start = setInterval(draw, speed);
+	setInterval(draw, speed);
 	
 });
